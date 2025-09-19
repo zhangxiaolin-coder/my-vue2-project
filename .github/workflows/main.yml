@@ -1,0 +1,49 @@
+# 工作流名称：明确标识为Vue2项目构建
+name: Vue2 Auto Build (npm)
+
+# 触发条件：推送/PR到主分支（根据实际分支名修改，如master）
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  actions: write
+
+
+jobs:
+  build:
+    # 运行环境：Ubuntu最新版（稳定且适配大多数场景）
+    runs-on: ubuntu-latest
+
+    steps:
+      # 步骤1：拉取仓库代码（官方插件，固定写法）
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 步骤2：安装Node.js（Vue2推荐匹配v14-v16，避免高版本兼容性问题）
+      - name: Set up Node.js(Vue2 exclusive)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '14.21.3'  # Vue2项目推荐版本，若本地用v14可直接修改
+          #cache: 'npm'        # 缓存npm依赖，加速后续构建
+
+      # 步骤3：安装项目依赖（Vue2可能依赖旧版包，添加--legacy-peer-deps避免依赖冲突
+      # 在“Install dependencies”前新增
+      - name: Clean npm cache
+        run: sudo npm cache clean --force
+      - name: Install dependencies (fix Vue2 compatibility)
+        run: sudo npm install --legacy-peer-deps --unsafe-perm  # 新增--unsafe-perm
+
+      # 步骤4：执行Vue2构建（默认脚本为build，若自定义需同步修改）
+      - name: Build Vue2 project
+        run: npm run build
+
+      # （可选）步骤5：构建产物归档（方便下载查看dist文件，非必需）
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vue2-dist  # 压缩包名称
+          path: dist/      # 要归档的文件夹（Vue2构建产物目录）
