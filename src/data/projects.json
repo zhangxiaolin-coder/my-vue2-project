@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "name": "ecif后台取数系统 （上海农商银行）",
+    "tag": "后端开发",
+    "desc": "给其他部门提供后端交互接口，主要是后端功能",
+    "background": "银行客户基本信息，比如：客户姓名、身份证号、银行卡号、国籍、家庭住址、电话号码等",
+    "features": [
+      "纯后端，不涉及前端",
+      "北京科蓝自研框架"
+    ],
+    "techStack": ["Ibatis", "DB2", "MVC", "esb"],
+    "coverImg": "@/assets/project1.jpg",
+    "demoLink": "https://你的演示链接.com",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 2,
+    "name": "后台数据文件传输 （平安银行）",
+    "tag": "运维",
+    "desc": "将源文件和标识文件从一个服务器发送到另一个服务器",
+    "background": "平安银行，将客户信息文件从一个服务器传输到另一个服务器。",
+    "features": [
+      "数据文件的传输",
+      "解决文件传输过程出现的问题",
+      "后台集群的搭建"
+    ],
+    "techStack": ["Linux"],
+    "coverImg": "@/assets/project2.jpg",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 3,
+    "name": "华为工厂电子流系统",
+    "tag": "全栈式开发",
+    "desc": "功能有：同意，转发，驳回，以及详情页（详情页有查询功能：可以根据订单号，时间，物料名查询",
+    "background": "华为终端物料从采购到使用、报废的工作审批流。",
+    "features": [
+      "同意功能",
+      "转发功能",
+      "驳回功能",
+      "详情页"
+    ],
+    "techStack": ["vue", "springBoot", "mybatis", "mysql","git","activity","maven"],
+    "coverImg": "@/assets/project3.jpg",
+    "demoLink": "https://你的演示链接.com",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 4,
+    "name": "监测项目",
+    "tag": "全栈式开发",
+    "desc": "监测项目，二次开发项目，为工业生产配置参数，为相关输入框加上使能操作，并校验所填数据在数据库中是否存在。",
+    "background": "1.使能功能；数据插入功能；数据库数据校验功能；2.小程序：xml模板导入功能；数据库中内容以xml模板格式导出功能。",
+    "features": [
+      "工厂监测项目"
+    ],
+    "techStack": ["jsp", "spring", "mybatis", "oracle"],
+    "coverImg": "@/assets/project1.jpg",
+    "demoLink": "https://你的演示链接.com",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 5,
+    "name": "码流解析",
+    "tag": "TLV解析",
+    "desc": "码流解析，将二进制流根据数据库中预先填好的解码规则解析成TLV，展示在页面。",
+    "background": "将数据库码流解析后，展示到页面；Excel表内容插入数据库以及其他任务。",
+    "features": [
+      "将数据库码流解析后，展示到页面",
+      "Excel表内容插入数据库以及其他任务"
+    ],
+    "techStack": ["springMVC", "spring", "mysql"],
+    "coverImg": "@/assets/project2.jpg",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 6,
+    "name": "政府机关工作相关的项目（要求保密)",
+    "tag": "后端开发",
+    "desc": "后台管理系统",
+    "background": "后台管理系统",
+    "features": [
+      "文章列表分页展示，支持按分类筛选后台管理系统"
+    ],
+    "techStack": ["springMVC", "mybatis", "Oracle"],
+    "coverImg": "@/assets/project3.jpg",
+    "demoLink": "https://你的演示链接.com",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 7,
+    "name": "华为软件工具链云龙调研工作",
+    "tag": "测试+使用",
+    "desc": "该软件的测试和使用 ",
+    "background": "该软件可直接一键式搭建多种高价语言框架",
+    "features": [
+      "一键式搭建多种高价语言框架"
+    ],
+    "techStack": [ "无"],
+    "coverImg": "@/assets/project1.jpg",
+    "demoLink": "https://你的演示链接.com",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 8,
+    "name": "众点点击网",
+    "tag": "导购软件",
+    "desc": "众点点击网是一个向顾客提供各种电商产品的网站，顾客点击该网站的产品链接进入类似于京东商城、天猫商城的电商平台，通过顾客的点击量从电商平台获取利润提成。",
+    "background": "参与项目的后台系统模块开发，用户模块、类目模块、标签、频道模块。",
+    "features": [
+      "用户模块",
+      "类目模块",
+      "标签",
+      "频道模块"
+    ],
+    "techStack": ["springMvc", "jsp", "mybatis","mysql","struts2"],
+    "coverImg": "@/assets/project2.jpg",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 9,
+    "name": "企业员工管理系统",
+    "tag": "企业内部员工的信息管理系统",
+    "desc": "项目组负责的模块有员工信息的添加,修改,分页带条件查询,以及删除",
+    "background": "企业内部员工的信息管理系统。完成员工信息的添加,修改,分页带条件查询,以及删除。",
+    "features": [
+      "完成员工信息的添加,修改,分页带条件查询,以及删除"
+    ],
+    "techStack": ["spring", "struts2", "mybatis", "jsp","mysql"],
+    "coverImg": "@/assets/project3.jpg",
+    "demoLink": "https://你的演示链接.com",
+    "codeLink": "https://github.com/你的仓库链接"
+  },
+  {
+    "id": 10,
+    "name": "百姓医药网",
+    "tag": "全栈式开发",
+    "desc": "随着电商行业的快速发展，医药类的网上订药也逐渐发展到了白热化的阶段，百姓医药公司遂委托我公司开发了该系统，以管理网上订药相关销售业务以及公司销售业绩。该系统分为面向用户的前台页面、第三方系统对接、内部系统接口以及面向内部工作人员的的后台管理系统。",
+    "background": "项目组负责的模块有后台的用户模块（登陆）、药品模块，前台的药品展示模块、订单模块、购物车模块。我主要负责药品管理模块，包括药品信息添加，修改，上、下架，带条件的分页查询，药品的审核，药品详情的展示；其次是库存查询与购物车模块。该系统使用html、css、jsp等相关技术进行页面开发 ，利用struts2、MyBatis进行开发。",
+    "features": [
+      "用户模块（登陆）",
+      "药品模块",
+      "前台的药品展示模块",
+      "订单模块",
+      "购物车模块"
+    ],
+    "techStack": ["struts2", "MyBatis", "html", "jsp","spring Mvc","mysql"],
+    "coverImg": "@/assets/project3.jpg",
+    "demoLink": "https://你的演示链接.com",
+    "codeLink": "https://github.com/你的仓库链接"
+  }
+]
